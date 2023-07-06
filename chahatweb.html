@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="boot.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville Cursive">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick Hand SC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #EEDCA8;
+        }
+
+    .class1 {
+    padding: 20px;
+    margin: 10px;
+    top: 40px;
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 100px;
+}
+
+
+.smiley {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 5em;
+    animation: bounce 1s infinite;
+}
+
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-40px);
+            }}
+        .box {
+        position: absolute;
+        top: 100px;
+        right: 150px;
+        width: 450px;
+        height: 350px;
+        background-color: black;
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #EEDCA8;
+        font-size: x-large;
+        font-family: 'Patrick Hand SC';
+        border-radius: 10px;
+        animation: slideIn 1s ease-in-out; 
+    }
+    @media (max-width: 768px) {
+        .box {
+            width: 100%;
+            height: auto;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+    }
+    .icon-container {
+        position: absolute;
+        TOP: 1400px; 
+        right: 450px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .icon-container a i {
+        color: black;
+        font-size: 50px;
+    }
+    .box2{
+        TOP: 500PX;
+        margin: 100px;
+        background-color: black;
+        width: 450px;
+        height: 600px;
+        padding: 10px;
+        overflow: hidden;
+        
+    
+    }
+    .box2 img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  animation: slideIn 5s ease-in-out; 
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <br><br>
+    <i class="far fa-smile smiley"></i></i></i><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br>
+    <div class="class1"><i>Hey there!</i></div>
+    <div class="box"><i>I'm Chahat,a student studying Computer Science and Applied Math at IIIT-D.I am always on the lookout for new things.
+        I have recently developed an interest in Web Development and am looking forward to pursue it in the future.I also love Mathematics as a subject and would love to explore it.Apart from that,I really want to grow as a human and put as many experiences as I can, in my pocket.</i>
+    </div>
+    <br><br><br>
+    <div class="icon-container">
+        <a href="https://www.instagram.com/chahatahujasss/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/chahat6606" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:chahatahuja6606@gmail.com" onclick="composeEmail(event)">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://medium.com/@chahatwithyou" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-medium"></i>
+        </a>
+        <a href="https://open.spotify.com/user/ndacg3ixzdhxeo98qjykmnbdu" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-spotify"></i>
+        </a>
+    </div>
+    <script>
+        function composeEmail(event) {
+            event.preventDefault();
+            window.location.href = "mailto:chahatahuja6606@gmail.com";
+        }
+    </script>
+    <div class="box2">
+        <img src="chahat.jpeg">
+    </div>
+<br><br><br>
+</body>
+</html>
